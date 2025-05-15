@@ -506,7 +506,7 @@ class Program
 
         Intro();
 
-        int peopleInLine = random.Next(15, 35);  
+        int peopleInLine = random.Next(15, 45);  
         SlowPrint($"you are in line. People ahead of you: {peopleInLine}");
 
         string message = peopleInLine >= 20
