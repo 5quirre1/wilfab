@@ -2,4 +2,4 @@
 
 yea peak game
 
-10
+10 endings :DDDD
