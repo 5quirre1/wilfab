@@ -1,6 +1,6 @@
 /*   /////////////////////////////////////////////////////////////////////////////
  *   
- *   wait in line for a banana - Made by 5quirre1 :3
+ *   wait in line for a banana - Made by 5quirre1 :D
  *   
  *   I randomly came up with this during tech and was like "this would be peak" so
  *   yea LMFAO I really hope you enjoy this game since it's actually sorta fun!!!
