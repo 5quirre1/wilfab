@@ -54,10 +54,10 @@ class Program
     static bool hasSeenBananaVisions = false;
     static bool hasMetBananaOracle = false;
     static bool wearingBananaHat = false;
-    static List < string > inventory = new List < string > ();
-    static List < string > bananaSecrets = new List < string > ();
+    static List<string> inventory = new List<string>();
+    static List<string> bananaSecrets = new List<string>();
 
-    static readonly string[] RandomEvents = new []
+    static readonly string[] RandomEvents = new[]
     {
         "a guy in a banana costume walks by and screams 'BANANA IS LIE!' and then gets eaten by some banana.",
         "someone starts playing the harmonica very badly..",
@@ -70,7 +70,7 @@ class Program
         "someone tries to sell you an NFT of the banana."
     };
 
-    static readonly string[] AdditionalEvents = new []
+    static readonly string[] AdditionalEvents = new[]
     {
         "your shoelaces tie themselves into a perfect bow.",
         "a bird lands on your shoulder and whispers stock tips.",
@@ -91,7 +91,7 @@ class Program
         "a butterfly lands on your nose and its wings display tiny banana patterns."
     };
 
-    static readonly string[] ExtraRandomEvents = new []
+    static readonly string[] ExtraRandomEvents = new[]
     {
         "a man in a trenchcoat whispers, 'apples are better' before falling into a manhole.",
         "your phone autocorrects every word to 'banana' for five seconds.",
@@ -110,7 +110,7 @@ class Program
         "a business man in a sharp suit walks by eating a banana with the peel still on."
     };
 
-    static readonly string[] MajorEvents = new []
+    static readonly string[] MajorEvents = new[]
     {
         "a street performer dressed as a giant banana starts dancing. He stops, points at you and shouts, 'THE CHOSEN ONE HAS ARRIVED!'.",
         "a black cat crosses the line, looks directly at you, and meows what sounds suspiciously like 'banana'.",
@@ -124,7 +124,7 @@ class Program
         "a small tear seems to appear in the air itself, revealing what looks like another dimension full of bananas before quickly sealing shut."
     };
 
-    static readonly string[] ExtraMajorEvents = new []
+    static readonly string[] ExtraMajorEvents = new[]
     {
         "the ground beneath the line briefly becomes translucent, revealing an underground banana cult performing a ritual directly below you.",
         "an elderly woman approaches you and whispers, 'i've tried to get the banana for 47 years.",
@@ -138,7 +138,7 @@ class Program
         "a nearby drain grate emits yellow steam that smells strongly of bananas and forms the words 'JOIN US' before dissipating."
     };
 
-    static readonly string[] Choices = new []
+    static readonly string[] Choices = new[]
     {
         "strike up a conversation with someone in line",
         "examine your surroundings more carefully",
@@ -151,7 +151,7 @@ class Program
         "try to peek ahead to see the banana"
     };
 
-    static readonly string[] ExtraChoices = new []
+    static readonly string[] ExtraChoices = new[]
     {
         "meditate on the concept of banana",
         "try to remember why you wanted a banana in the first place",
@@ -170,7 +170,7 @@ class Program
         "perform subtle banana-themed hand gestures to others in line"
     };
 
-    static readonly Dictionary < string, string[] > ChoiceOutcomes = new Dictionary < string, string[] >
+    static readonly Dictionary<string, string[]> ChoiceOutcomes = new Dictionary<string, string[]>
     {
         {
             "strike up a conversation with someone in line",
@@ -264,7 +264,7 @@ class Program
         }
     };
 
-    static readonly Dictionary < string, string[] > ExtraChoiceOutcomes = new Dictionary < string, string[] >
+    static readonly Dictionary<string, string[]> ExtraChoiceOutcomes = new Dictionary<string, string[]>
     {
         {
             "meditate on the concept of banana",
@@ -368,7 +368,7 @@ class Program
         }
     };
 
-    static readonly Dictionary < string, string[] > MoreExtraChoiceOutcomes = new Dictionary < string, string[] >
+    static readonly Dictionary<string, string[]> MoreExtraChoiceOutcomes = new Dictionary<string, string[]>
     {
         {
             "try to calculate how many bananas exist in the world right now",
@@ -422,7 +422,7 @@ class Program
         }
     };
 
-    static readonly string[] BananaBossDialog = new []
+    static readonly string[] BananaBossDialog = new[]
     {
         "THE BANANA GUARDIAN APPEARS! It's a 7-foot tall banana with muscular arms and sunglasses.",
         "'SO YOU SEEK THE SACRED YELLOW FRUIT OF DESTINY?' it booms.",
@@ -430,7 +430,7 @@ class Program
         "The Banana Guardian looks you up and down. 'PERHAPS YOU ARE DIFFERENT... WE SHALL SEE!'"
     };
 
-    static readonly string[] BananaSecretLore = new []
+    static readonly string[] BananaSecretLore = new[]
     {
         "Bananas aren't fruit, but actually sentient beings from the fifth dimension shaped like fruit.",
         "The curved shape of bananas is designed to match the curve of space-time itself.",
@@ -444,7 +444,7 @@ class Program
         "The true purpose of the banana is to serve as a key to the universe."
     };
 
-    static readonly Dictionary < string, string[] > SpecialNPCs = new Dictionary < string, string[] >
+    static readonly Dictionary<string, string[]> SpecialNPCs = new Dictionary<string, string[]>
     {
         {
             "Banana Oracle",
@@ -478,7 +478,7 @@ class Program
         }
     };
 
-    static readonly Dictionary < string, Action > MiniGames = new Dictionary < string, Action >
+    static readonly Dictionary<string, Action> MiniGames = new Dictionary<string, Action>
     {
         {
             "Banana Counting Contest",
@@ -510,7 +510,7 @@ class Program
 
     static void SlowPrint(string text, int delay = 30)
     {
-        foreach(char c in text)
+        foreach (char c in text)
         {
             Console.Write(c);
             Thread.Sleep(delay);
@@ -521,11 +521,11 @@ class Program
     static void ShowStats()
     {
         Console.WriteLine("\n----------------------");
-        Console.WriteLine($ "Sanity: {sanity}%");
-        Console.WriteLine($ "Patience: {patience}%");
-        Console.WriteLine($ "Banana Energy: {bananaEnergy}%");
-        Console.WriteLine($ "Banana Tolerance: {bananaTolerance}/5");
-        Console.WriteLine($ "Weirdness Meter: {weirdnessMeter}/100");
+        Console.WriteLine($"Sanity: {sanity}%");
+        Console.WriteLine($"Patience: {patience}%");
+        Console.WriteLine($"Banana Energy: {bananaEnergy}%");
+        Console.WriteLine($"Banana Tolerance: {bananaTolerance}/5");
+        Console.WriteLine($"Weirdness Meter: {weirdnessMeter}/100");
         Console.Write("Inventory: ");
         if (inventory.Count == 0)
             Console.Write("Empty");
@@ -535,7 +535,7 @@ class Program
         if (bananaSecrets.Count > 0)
         {
             Console.WriteLine();
-            Console.WriteLine($ "Banana Secrets: {bananaSecrets.Count}/10");
+            Console.WriteLine("Banana Secrets: {bananaSecrets.Count}/10");
         }
 
         Console.WriteLine("\n----------------------\n");
@@ -548,10 +548,10 @@ class Program
 
         Console.WriteLine("\nwhat would you like to do?");
 
-        List < int > choiceIndices = new List < int > ();
+        List<int> choiceIndices = new List<int>();
         Random rand = new Random();
 
-        List < string > allChoices = new List < string > ();
+        List<string> allChoices = new List<string>();
         allChoices.AddRange(Choices);
         allChoices.AddRange(ExtraChoices);
 
@@ -564,7 +564,7 @@ class Program
 
         for (int i = 0; i < choiceIndices.Count; i++)
         {
-            Console.WriteLine($ "{i + 1}. {allChoices[choiceIndices[i]]}");
+            Console.WriteLine("{i + 1}. {allChoices[choiceIndices[i]]}");
         }
 
         Console.WriteLine("5. Just wait in line");
@@ -599,7 +599,7 @@ class Program
 
             string outcome = possibleOutcomes[rand.Next(possibleOutcomes.Length)];
 
-            Console.WriteLine($ "\nYou {chosenAction.ToLower()}.");
+            Console.WriteLine($"\nYou {chosenAction.ToLower()}.");
             Thread.Sleep(1500);
             SlowPrint(outcome);
 
@@ -669,7 +669,7 @@ class Program
         SlowPrint("* * * * * * * * * * * * * * * * * * * *", 20);
         Thread.Sleep(500);
 
-        List < string > allMajorEvents = new List < string > ();
+        List<string> allMajorEvents = new List<string>();
         allMajorEvents.AddRange(MajorEvents);
         allMajorEvents.AddRange(ExtraMajorEvents);
 
@@ -765,7 +765,7 @@ class Program
         SlowPrint("* * * * * * * * * * * * * * * * * * * *", 20);
         Thread.Sleep(500);
 
-        foreach(string line in SpecialNPCs[npc])
+        foreach (string line in SpecialNPCs[npc])
         {
             SlowPrint(line, 40);
             Thread.Sleep(800);
@@ -872,7 +872,7 @@ class Program
 
         int difference = Math.Abs(guess - actualCount);
 
-        SlowPrint($ "\n'I have exactly {actualCount} bananas!' the vendor announces.");
+        SlowPrint($"\n'I have exactly {actualCount} bananas!' the vendor announces.");
 
         if (difference == 0)
         {
@@ -915,7 +915,7 @@ class Program
         SlowPrint("'Greetings, banana seeker. Answer my riddle and gain banana wisdom.'", 40);
         Thread.Sleep(1000);
 
-        string[] riddles = new []
+        string[] riddles = new[]
         {
             "I am yellow when I'm peeled, but my skin's not always so. What am I?",
             "I curve toward the earth but never touch it while on my tree. What am I?",
@@ -926,7 +926,7 @@ class Program
         Random random = new Random();
         string riddle = riddles[random.Next(riddles.Length)];
 
-        SlowPrint($ "\nRiddle: {riddle}", 40);
+        SlowPrint($"\nRiddle: {riddle}", 40);
         Console.Write("\nYour answer: ");
         string answer = Console.ReadLine().ToLower();
 
@@ -935,7 +935,7 @@ class Program
             SlowPrint("\n'Your banana wisdom is strong!' the figure says with approval.");
             SlowPrint("'Take this token of banana enlightenment.'");
 
-            string[] rewards = new []
+            string[] rewards = new[]
             {
                 "Riddle Master's Banana Badge",
                 "Banana Wisdom Token",
@@ -948,7 +948,7 @@ class Program
             weirdnessMeter += 5;
             bananaTolerance += 1;
 
-            SlowPrint($ "You received: {reward}");
+            SlowPrint($"You received: {reward}");
             SlowPrint("Your banana energy and tolerance increase!");
         }
         else
@@ -1003,7 +1003,7 @@ class Program
         }
         else
         {
-            SlowPrint($ "\n'WRONG! Number {fakeBanana} was the fake!'");
+            SlowPrint($"\n'WRONG! Number {fakeBanana} was the fake!'");
             SlowPrint("The fake banana suddenly melts into yellow goo.");
             SlowPrint("'Better luck next time, banana novice!'");
 
@@ -1025,7 +1025,7 @@ class Program
         SlowPrint("You finally reach the front of the line, but something's different...", 40);
         Thread.Sleep(1500);
 
-        foreach(string dialog in BananaBossDialog)
+        foreach (string dialog in BananaBossDialog)
         {
             SlowPrint(dialog, 50);
             Thread.Sleep(1200);
@@ -1045,14 +1045,14 @@ class Program
     {
         SlowPrint("The Banana Guardian crosses its muscular arms. 'YOU MUST ANSWER THREE RIDDLES TO PROVE YOUR WORTH!'");
 
-        string[] riddles = new []
+        string[] riddles = new[]
         {
             "What is yellow on the outside, white on the inside, but is actually neither a color nor a vegi?",
             "I am curved but have no corners, eaten but never hungry. What am I?",
             "What do you call a banana that's too ripe, too green, and just right all at once?"
         };
 
-        string[] answers = new []
+        string[] answers = new[]
         {
             "banana",
             "banana",
@@ -1065,7 +1065,7 @@ class Program
         {
             Console.Clear();
             ShowStats();
-            SlowPrint($ "\nRIDDLE {i+1}: {riddles[i]}", 40);
+            SlowPrint($"\nRIDDLE {i+1}: {riddles[i]}", 40);
             Console.Write("\nYour answer: ");
             string answer = Console.ReadLine().ToLower().Trim();
 
@@ -1307,13 +1307,13 @@ class Program
 
     static void Main()
     {
-        Console.Title = "Wait in line for a banana";
+        Console.Title = "Wait In Line For a Banana";
         Random random = new Random();
 
         Intro();
 
         int peopleInLine = random.Next(15, 45);
-        SlowPrint($ "you are in line. People ahead of you: {peopleInLine}");
+        SlowPrint($"you are in line. People ahead of you: {peopleInLine}");
 
         string message = peopleInLine >= 20 ?
             "The line is incredibly long. This might take forever..." :
@@ -1335,7 +1335,7 @@ class Program
 
             ShowStats();
 
-            SlowPrint($ "People ahead of you in line: {peopleInLine}\n");
+            SlowPrint($"People ahead of you in line: {peopleInLine}\n");
 
             if (random.Next(100) < 70)
                 ShowChoices();
@@ -1349,14 +1349,14 @@ class Program
                 miniGameCounter--;
                 Console.Clear();
 
-                List < string > allRandomEvents = new List < string > ();
+                List<string> allRandomEvents = new List<string>();
                 allRandomEvents.AddRange(RandomEvents);
                 allRandomEvents.AddRange(AdditionalEvents);
                 allRandomEvents.AddRange(ExtraRandomEvents);
 
                 string randomEvent = allRandomEvents[random.Next(allRandomEvents.Count)];
 
-                SlowPrint($ "{randomEvent}");
+                SlowPrint($"{randomEvent}");
                 Thread.Sleep(2000);
 
                 if (randomEvent.Contains("BANANA IS LIE"))
@@ -1427,11 +1427,11 @@ class Program
             Console.Clear();
 
             if (lineChange < 0)
-                SlowPrint($ "Someone left the line. People ahead of you: {peopleInLine}\n");
+                SlowPrint($"Someone left the line. People ahead of you: {peopleInLine}\n");
             else if (lineChange > 0)
-                SlowPrint($ "Someone joined ahead of you. How rude! People ahead of you: {peopleInLine}\n");
+                SlowPrint($"Someone joined ahead of you. How rude! People ahead of you: {peopleInLine}\n");
             else
-                SlowPrint($ "The line isn't moving. People ahead of you: {peopleInLine}\n");
+                SlowPrint($"The line isn't moving. People ahead of you: {peopleInLine}\n");
 
             if (random.Next(100) < 10)
             {
@@ -1470,7 +1470,7 @@ class Program
             {
                 Console.Clear();
                 SlowPrint("\nYou've had enough of this nonsense! You storm off, cursing bananas and everything they stand for.");
-                SlowPrint("As you leave, you hear soft laughter coming from the banana stand.");
+                SlowPrint("As you leave, you hear soft laughter coming from the line.");
                 Thread.Sleep(3000);
                 Console.Clear();
                 SlowPrint("GAME OVER: PATIENCE EXHAUSTED", 100);
