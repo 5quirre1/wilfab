@@ -564,7 +564,7 @@ class Program
 
         for (int i = 0; i < choiceIndices.Count; i++)
         {
-            Console.WriteLine("{i + 1}. {allChoices[choiceIndices[i]]}");
+            Console.WriteLine($"{i + 1}. {allChoices[choiceIndices[i]]}");
         }
 
         Console.WriteLine("5. Just wait in line");
@@ -1065,7 +1065,7 @@ class Program
         {
             Console.Clear();
             ShowStats();
-            SlowPrint($"\nRIDDLE {i+1}: {riddles[i]}", 40);
+            SlowPrint($"\nRIDDLE {i + 1}: {riddles[i]}", 40);
             Console.Write("\nYour answer: ");
             string answer = Console.ReadLine().ToLower().Trim();
 
